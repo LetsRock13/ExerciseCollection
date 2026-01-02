@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+IN=$1
+
+help() {
+
+	echo -en "\t\tBuild help\n" 
+	echo -en "\t\t\t./build [option]\n" 
+	echo -en "\t\tOptions\n" 
+	echo -en "\t\t<-b> Calls java compiler\n"
+	echo -en "\t\t<-h> Calls this help\n\n"
+	echo -en "\t\t<-r> Runs the application\n\n"
+	echo -en "\t\t<-c> Removes all *.class files\n\n"
+
+}
+
+main() {
+	case $IN in
+		"-b")
+			javac GameOfLive.java;;
+		"-h")
+			help;;
+		"-r")
+			java GameOfLive;;
+		"-c")
+			rm -vf *class;;
+		*)
+			help;;
+	esac
+}
+
+main
