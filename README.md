@@ -1,19 +1,8 @@
-# Conway Game of Live written in Java
+# Exercise Collection
 
-## Quick Start Linux
+This repository is just a litle
+collection of exercises.
 
-```console
-    sudo chmod u+x build
-    ./build -b # Build the application
-    ./build -r # Run the application
-    ./build -h # Call the halp of the build script
-```
+Feel free to explore it.
 
-## Quick Start Windows
-
-- Never testet under Windows
-
-```console
-    javac GameOfLive.java
-    java GameOfLive
-```
+Any Project under it is MIT licensed.

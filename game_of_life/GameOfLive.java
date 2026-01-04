@@ -49,7 +49,7 @@ public class GameOfLive {
 	private final char DEAD = 'x';
 	private final char ALLIVE = '1';
 	private final int ITERATION = 100; // Controlls the max itterations 
-	private final long INTERVAL = 500; // Controlls the spead
+	private final long INTERVAL = 250; // Controlls the spead
 
 	private  enum Directions {
 			ALL,
@@ -62,15 +62,15 @@ public class GameOfLive {
 	private char[][] field = new char[FIELD][FIELD];
 
 	// The start pattern for the game of live
-	private char[][] startPatern = {{DEAD,DEAD,DEAD,DEAD,DEAD,DEAD},
-									{DEAD,ALLIVE,ALLIVE,ALLIVE,DEAD,DEAD},
-									{DEAD,ALLIVE,DEAD,ALLIVE,DEAD,DEAD},
-									{DEAD,ALLIVE,DEAD,ALLIVE,DEAD,DEAD},
-									{DEAD,DEAD,DEAD,DEAD,DEAD,DEAD},
-									{DEAD,ALLIVE,DEAD,ALLIVE,DEAD,DEAD},
-									{DEAD,ALLIVE,DEAD,ALLIVE,DEAD,DEAD},
-									{DEAD,ALLIVE,ALLIVE,ALLIVE,DEAD,DEAD},
-									{DEAD,DEAD,DEAD,DEAD,DEAD,DEAD}};
+	private char[][] startPatern = {{'x','x','x','x','x','x'},
+									{'x','x','x','x','x','x'},
+									{'x','x','x','1','x','x'},
+									{'x','1','x','x','1','x'},
+									{'x','1','x','x','1','x'},
+									{'x','x','1','x','x','x'},
+									{'x','x','x','x','x','x'},
+									{'x','x','x','x','x','x'},
+									{'x','x','x','x','x','x'}};
 
 	private ArrayList<Cell> cells = new ArrayList<Cell>();
 
